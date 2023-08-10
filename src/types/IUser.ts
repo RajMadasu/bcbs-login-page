@@ -8,5 +8,5 @@ export interface IUser {
 
 export interface IUserResponse {
   data: IUser[];
-  total_pages: number
+  total_pages: number;
 }

@@ -11,8 +11,8 @@ const useUserPage = () => {
     const res = await getUsers(page);
     setUsers(res?.data || []);
     setTotalPageNumber(res?.total_pages || 0);
-  }
-  
+  };
+
   useEffect(() => {
     getUserData();
   }, [page]);

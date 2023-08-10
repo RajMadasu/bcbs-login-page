@@ -11,4 +11,4 @@ export const getUsers = (page: number): Promise<IUserResponse> => {
 
 export const deleteUser = (id: number) => {
   return serviceInstance.delete(`/users/${id}`);
-}
+};

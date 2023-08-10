@@ -12,6 +12,11 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
+            {/**
+             * if we have more nested routes,
+            we can also leverage the outlet of React-router V6to avoid 
+            re-rendering of the parent routes
+             *  */}
             <Route path='/' element={<UserPage />} />
             <Route path='/login' element={<Login />} />
           </Routes>

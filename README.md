@@ -1,12 +1,17 @@
 # install project dependencies
-*npm install*
+
+_npm install_
 
 # run the app in dev mode
-*npm run dev*
+
+_npm run dev_
 
 # build app
-*npm run build*
+
+_npm run build_
 
 # App has 2 routes
+
 ## '/' to load users list
+
 ## '/login' for user authentication# bcbs_login

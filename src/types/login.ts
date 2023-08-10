@@ -1,19 +1,18 @@
-
 export interface ILoginRequest {
-    email: string;
-    password: string;
+  email: string;
+  password: string;
 }
 
 export interface ILoginResponse {
-    token: string;
+  token: string;
 }
 
 export interface IContext {
-    authenticate: (email: string, password: string) => Promise<void>;
-    logout: () => void;
-    token?: string
+  authenticate: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+  token?: string;
 }
 
 export interface IAuthProvider {
-    children: JSX.Element;
+  children: JSX.Element;
 }
