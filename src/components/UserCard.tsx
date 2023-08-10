@@ -9,7 +9,12 @@ const UserCard = ({ user }: { user: IUser }) => {
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component='img' alt='green iguana' height='140' image={user.avatar} />
+      <CardMedia
+        component='img'
+        alt={`Image of ${user.first_name}`}
+        height='140'
+        image={user.avatar}
+      />
       <CardContent>
         <Typography gutterBottom variant='h6' component='div' color='text.primary'>
           {`${user.first_name} ${user.last_name}`}
